@@ -110,7 +110,7 @@ header
 	background-color: #fff
 	transition: all .5s ease
 	.logo
-		color: blue
+		color: $primary
 	button
 		color: #333
 .navbar-collapse
@@ -138,10 +138,10 @@ header
 			padding: 10px
 			color: #333 
 			&:hover
-				color: blue
+				color: $primary
 				transition: all .3s ease
 			&.active
-				color: blue
+				color: $primary
 .navbar-nav .nav-link
 	padding-right: 30px
 	padding-left: 30px
@@ -155,7 +155,7 @@ header
 				top: 40px
 				
 		&:before 
-			background: #4676fa
+			background: $primary 
 			content: ""
 			height: 1px
 			left: 110px
@@ -170,4 +170,53 @@ header
 		&.active
 			&:before 
 				transform: scale(1)
+.navbar
+	transition: all .5s ease
+section
+	padding: 80px 0
+	hr
+		width: 70px
+		border-top: 2px solid $primary
+		position: relative
+		&:before
+			content: ""
+			border: 4px solid #fff
+			background-color: $primary
+			width: 10px
+			height: 10px 
+			color: $primary
+			border-radius: 10px
+			position: absolute
+			bottom: 0
+			margin-left: -5px
+.section-h2
+	font-family: $light-font
+	font-weight: 100
+	span
+		color: $primary
+.section-p
+	font-size: 14px
+	font-weight: 400
+	line-height: 30px
+	letter-spacing: .5px
+	font-family: $semi-font
+.services-item
+	padding: 20px
+	&:hover
+		background-color: #fff
+		+bsh(0px,0px,6px,-2px,$dark)
+		transition: background-color .6s ease
+	h4
+		margin: 20px 0
+		font-size: 20px
+	p
+		font-size: 14px
+		line-height: 26px
+	i
+		color: $primary
+		font-size: 30px
+		padding: 15px
+		display: inline-block
+		border-radius: 3px
+		border: 1px solid $primary 
 @import "media" // Always at the end
