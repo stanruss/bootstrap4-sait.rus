@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+$(window).stellar();
 });	
 $(window).scroll(function() {
 	if($(window).scrollTop()>200) {

@@ -47,6 +47,17 @@ header
 	background-repeat: no-repeat 
 	background-position: 50% 50%
 	background-image: none
+	video
+		margin: auto
+		position: absolute
+		z-index: -1
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		visibility: visible
+		opacity: 1
+		width: 100%
+		height: auto
 .logo-menu 
 	padding: 15px 0	
 .navbar-toggler
@@ -98,19 +109,31 @@ header
 .menu-bg
 	background-color: #fff
 	transition: all .5s ease
-.navbar-nav
+	.logo
+		color: blue
+	button
+		color: #333
+.navbar-collapse
 	position: relative
-	width: 300px
+.navbar-nav
+	position: fixed
+	width: 260px
+	right: 0
+	top: 40px
+	height: 100%
 	margin-right: -16px
 	margin-top: -42px
 	background-color: #fff
 	button
 		position: absolute
 		top: 0
-		left: -32px
+		left: -40px
+		width: 40px
+		height: 40px
+		padding-top: 5px
+		i
+			font-size: 25px
 	li 
-		&:first-child
-			margin-top: 31px
 		a
 			padding: 10px
 			color: #333 
@@ -130,12 +153,12 @@ header
 		&:first-child
 			&:before 
 				top: 40px
-				left: 30px
+				
 		&:before 
 			background: #4676fa
 			content: ""
 			height: 1px
-			left: 0
+			left: 110px
 			position: absolute
 			bottom: 0
 			transform: scale(0)
