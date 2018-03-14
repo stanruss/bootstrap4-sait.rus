@@ -108,6 +108,7 @@ header
 		visibility: visible
 .menu-bg
 	background-color: #fff
+	+bsh(0,-2px,8px,1px,$secondary)
 	transition: all .5s ease
 	.logo
 		color: $primary
@@ -188,7 +189,7 @@ section
 			border-radius: 10px
 			position: absolute
 			bottom: 0
-			margin-left: -5px
+			left: 30px
 .section-h2
 	font-family: $light-font
 	font-weight: 100
@@ -219,4 +220,57 @@ section
 		display: inline-block
 		border-radius: 3px
 		border: 1px solid $primary 
+.features-boxes-text-left
+	padding-right: 90px
+	display: block
+	h5
+		font-size: 19px
+.features-i-left
+	width: 60px
+	height: 60px
+	color: $primary
+	text-align: center
+	padding-top: 15px
+	margin: 15px
+	border: 1px solid $primary
+	display: inline-block
+	float: right
+	border-radius: 3px
+	&:hover
+		background-color: $primary
+		color: #fff
+		transition: color .4s ease
+	i
+		font-size: 25px
+.features-boxes-text-right
+	padding-left: 90px
+	display: block
+	h5
+		font-size: 19px
+.features-i-right
+	width: 60px
+	height: 60px
+	color: $primary
+	text-align: center
+	padding-top: 15px
+	margin: 15px
+	border: 1px solid $primary
+	display: block
+	float: left
+	border-radius: 3px
+	&:hover
+		background-color: $primary
+		color: #fff
+		transition: color .4s ease
+	i
+		font-size: 25px
+.features-photo
+	background-image: url(../img/feature.jpg)
+	background-size: 100%
+	background-repeat: no-repeat
+	background-position: 50% 50%
+
+
+
+
 @import "media" // Always at the end
