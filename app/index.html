@@ -26,8 +26,8 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
-<body>
-	
+<body data-spy="scroll" data-target="#navbar">
+	<div id="/"></div>
 	<header id="video-area" data-stellar-background-ratio="0.9">
 		<div id="block" data-vide-bg="video/video">
 			<div class="video">
@@ -35,32 +35,32 @@
 				</video>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-xl fixed-top  py-3">
+		<nav id="navbar" class="navbar navbar-expand-xl fixed-top  py-3">
 			<a href="index.html" class="logo"><span class="lnr lnr-diamond"></span> LOGO</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="open-button"><i class="lnr lnr-menu"></i></button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav icon-list text-center ml-auto">
 					<li class="nav-item">
-						<a class="nav-link active" href="#video-area">Главная</a>
+						<a class="nav-link active" href="/">Главная</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#services">Ссылка1</a>
+						<a class="nav-link" href="#services">Сервисы</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#features">Ссылка2</a>
+						<a class="nav-link" href="#features">Возможности</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#services">Ссылка3</a>
+						<a class="nav-link" href="#!">Ссылка3</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#features">Ссылка4</a>
+						<a class="nav-link" href="#!">Ссылка4</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#services">Ссылка5</a>
+						<a class="nav-link" href="#!">Ссылка5</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#features">Ссылка6</a>
+						<a class="nav-link" href="#!">Ссылка6</a>
 					</li>
 					
 					
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 </header>
-<section class="services bg-light">
+<section class="services bg-light" id="services">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col text-center">
@@ -140,7 +140,7 @@
 		</div>
 	</div>
 </section>
-<section class="features">
+<section class="features" id="features">
 	<div class="container">
 		<div class="row">
 			<div class="col text-center mb-5">
